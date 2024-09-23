@@ -48,13 +48,18 @@ class Manager extends Employee {
   }
 
   showTeam() {
-    console.log('Team: ',this.teamName);
-    console.log('Manager: ', this.toString())
-    this.employees.forEach((e) => console.log('employee: ',e));
+    console.log("Team: ", this.teamName);
+    console.log("Manager: ", this.toString());
+    this.employees.forEach((e) => console.log("employee: ", e));
   }
 }
 
-const manager1 = new Manager('Gandalf', 'The Grey', 'manager', 'The Fellowship of the ring')
-manager1.addEmployee(employee1)
-manager1.addEmployee(employee2)
-manager1.showTeam()
+const manager1 = new Manager(
+  "Gandalf",
+  "The Grey",
+  "manager",
+  "The Fellowship of the ring"
+);
+manager1.addEmployee(employee1);
+manager1.addEmployee(employee2);
+manager1.showTeam();
