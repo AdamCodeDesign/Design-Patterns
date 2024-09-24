@@ -31,6 +31,7 @@ let Logger = (function () {
 
 const logger1 = Logger.getInstance();
 logger1.log("Hello", "alert");
+logger1.log("Hello", "alert");
 logger1.log("Hello", "alert2");
 logger1.log("Hello", "alert3");
 console.log(Logger.logData);
