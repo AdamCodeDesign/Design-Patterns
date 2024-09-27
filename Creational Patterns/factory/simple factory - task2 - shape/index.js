@@ -25,7 +25,7 @@ function Square(posX, posY, squareHeight, squareWidth) {
 }
 
 function Triangle(posX, posY, triangleHeight, triangleWidth) {
-  Square.call(this, posX, posY);
+  Shape.call(this, posX, posY);
   this.triangleHeight = triangleHeight;
   this.triangleWidth = triangleWidth;
   this.getSurfaceArea = function () {
