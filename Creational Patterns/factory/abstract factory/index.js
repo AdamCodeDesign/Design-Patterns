@@ -66,6 +66,7 @@ class AbstractVehicleFactory {
   // Pobranie wszystkich zarejestrowanych typów pojazdów
   getTypes() {
     return this.types;
+    
   }
 
   // Tworzenie pojazdu na podstawie zarejestrowanego typu
