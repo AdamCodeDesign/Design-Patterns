@@ -32,7 +32,7 @@ function NewPaymentApi() {
       return {
         result: true,
         fee:
-          this.priority.toLowerCase() === "high" ? money * 0.03 : money * 0.02,
+          this.priority?.toLowerCase() === "high" ? money * 0.03 : money * 0.02,
       };
     },
   };
@@ -40,6 +40,7 @@ function NewPaymentApi() {
 
 function PaymentAdapter(credentials) {
   let payment = new NewPaymentApi();
+  console.log(payment)
   payment.login(credentials);
   return {
     sendMoney: function (paymentData) {
