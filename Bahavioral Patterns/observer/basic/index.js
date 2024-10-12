@@ -31,14 +31,14 @@ class Candidate {
 
 const jobPortal = new JobPortal();
 
-const candidate1 = new Candidate('Adam')
-const candidate2 = new Candidate('John')
-const candidate3 = new Candidate('Mike')
+const candidate1 = new Candidate("Adam");
+const candidate2 = new Candidate("John");
+const candidate3 = new Candidate("Mike");
 
-jobPortal.subscribe(candidate1)
-jobPortal.subscribe(candidate2)
-jobPortal.subscribe(candidate3)
-jobPortal.addNewListings('Junior Fullstack Developer - full time')
+jobPortal.subscribe(candidate1);
+jobPortal.subscribe(candidate2);
+jobPortal.subscribe(candidate3);
+jobPortal.addNewListings("Junior Fullstack Developer - full time");
 
-jobPortal.unsubscribe(candidate1)
-jobPortal.addNewListings('Senior Fullstack Developer')
+jobPortal.unsubscribe(candidate1);
+jobPortal.addNewListings("Senior Fullstack Developer");
